@@ -1,4 +1,4 @@
-// a automorpic number is a number whose square is present in the last of the number
+// a automorpic number is a number whose square is present in the last of the number the lengthway
 import java.util.*;
 public class Automorphic {
     static int reverse(int n){
