@@ -45,10 +45,7 @@ public class Burning_trees {
         for(int i=0;i<idex;i++){
             for(int j=0;j<idex;j++){
                 if(exist(x, y)&&a[x][y]!=0){
-                   //retaining the values in here and calling more squares
-                  
-
-                    a[x][y]=0;
+                 a[x][y]=0;
                 }y++;
             }x++;
             y=yp;}
