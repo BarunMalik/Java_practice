@@ -1,7 +1,7 @@
 package Array;
 import java.util.*;
 public class Burning_trees {
-    int a[][];
+    int a[][],b[][];
     int r1,c1;
     Scanner sc=new Scanner(System.in);
     Burning_trees(){
@@ -39,16 +39,24 @@ public class Burning_trees {
     boolean exist(int x,int y){  //x for row and y for column
         return x>=0&&y>=0&&a.length>x&&a[x].length>y;
     }
-    void square(int x,int y){--x;
+    void square(int x,int y){
+        
+           
+        --x;
         --y;
         int idex=3,yp=y;    
         for(int i=0;i<idex;i++){
             for(int j=0;j<idex;j++){
                 if(exist(x, y)&&a[x][y]!=0){
                  a[x][y]=0;
+                  square(x, y);
                 }y++;
             }x++;
             y=yp;}
-    }
+            if(!exist(x, y)){
+                return;
+            }else if(a[x][x]==0){return;}
+           
+                    
     
-}
+}}
