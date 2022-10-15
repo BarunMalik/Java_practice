@@ -37,14 +37,18 @@ public class Burning_trees {
     }
     void square(int x,int y){--x;
         --y;
-        int idex=3;
-                int yp=y;
+        int idex=3,yp=y;    
         for(int i=0;i<idex;i++){
             for(int j=0;j<idex;j++){
                 if(exist(x, y)&&a[x][y]!=0){
+                   //retaining the values in here and calling more squares
+                   
                     a[x][y]=0;
                 }y++;
             }x++;
             y=yp;}
+    }
+    void more_square(int x,int y){
+
     }
 }
