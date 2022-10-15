@@ -42,13 +42,24 @@ public class Burning_trees {
             for(int j=0;j<idex;j++){
                 if(exist(x, y)&&a[x][y]!=0){
                    //retaining the values in here and calling more squares
-                   
+                   more_square(x,y);
+
                     a[x][y]=0;
                 }y++;
             }x++;
             y=yp;}
     }
     void more_square(int x,int y){
-
+        --x;
+        --y;
+        int idex=3,yp=y;    
+        for(int i=0;i<idex;i++){
+            for(int j=0;j<idex;j++){
+                if(exist(x, y)&&a[x][y]!=0){                
+                    a[x][y]=0;
+                }y++;
+            }x++;
+            y=yp;
     }
-}
+
+}}
