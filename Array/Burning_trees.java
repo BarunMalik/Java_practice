@@ -39,9 +39,7 @@ public class Burning_trees {
     boolean exist(int x,int y){  //x for row and y for column
         return x>=0&&y>=0&&a.length>x&&a[x].length>y;
     }
-    void square(int x,int y){
-        
-           
+    void square(int x,int y){  
         --x;
         --y;
         int idex=3,yp=y;    
