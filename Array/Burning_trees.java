@@ -35,15 +35,16 @@ public class Burning_trees {
     boolean exist(int x,int y){  //x for row and y for column
         return x>=0&&y>=0&&a.length>x&&a[x].length>y;
     }
-    void square(int x,int y){--x;--y;int idex=3;
-        if(!exist(x, y)){++x;++y;--idex;}
-        int yp=y;
-        for(int i=0;i<idex;i++){y=yp;
+    void square(int x,int y){--x;
+        --y;
+        int idex=3;
+                int yp=y;
+        for(int i=0;i<idex;i++){
             for(int j=0;j<idex;j++){
                 if(exist(x, y)&&a[x][y]!=0){
                     a[x][y]=0;
                 }y++;
             }x++;
-        }
+            y=yp;}
     }
 }
