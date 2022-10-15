@@ -14,9 +14,13 @@ public class Burning_trees {
         }print();
         System.out.println("tree needed to be burnt the count starts from 0\n First row and then column");
         r1=sc.nextInt();c1=sc.nextInt();
-        if(!exist(r1, c1)&&a[r1][c1]==0){
+        if(!exist(r1, c1)){
             System.out.println("Given coordinates or tree doesnot exist");
-        }else{
+        }
+        else if(!(a[r1][c1]==1)){
+            System.out.println("Given coordinates or tree doesnot exist");
+        }
+        else{
             System.out.println("The trees starts burning");
             square(r1, c1);
             print();
