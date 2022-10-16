@@ -53,8 +53,5 @@ public class Burning_trees {
             y=yp;}
             if(!exist(x, y)){
                 return;
-            }else if(a[x][x]==0){return;}
-           
-                    
-    
+            }else if(a[x][x]==0){return;} 
 }}
