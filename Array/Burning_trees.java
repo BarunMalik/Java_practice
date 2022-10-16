@@ -1,7 +1,7 @@
 package Array;
-import java.util.*;
+import java.util.Scanner;
 public class Burning_trees {
-    int a[][],b[][];
+    int a[][];
     int r1,c1;
     Scanner sc=new Scanner(System.in);
     Burning_trees(){
@@ -9,7 +9,7 @@ public class Burning_trees {
         a=new int[sc.nextInt()][sc.nextInt()];
         for(int i=0;i<a.length;i++){
             for(int j=0;j<a[i].length;j++){
-                a[i][j]=new Random().nextInt(2);
+                a[i][j]=(int)Math.round( Math.random() ) ;
             }
         }print();
         System.out.println("tree needed to be burnt the count starts from 0\n First row and then column");
