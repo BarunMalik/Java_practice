@@ -1,3 +1,4 @@
+package Special_problems;
 import java.util.Scanner;
 class Longest_substring_sequence{
     String k;

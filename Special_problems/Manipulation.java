@@ -12,5 +12,4 @@ public class Manipulation {
         int y=sc.nextInt();
         System.out.println(x>=y?"YES":"NO");
     }
-
 }
